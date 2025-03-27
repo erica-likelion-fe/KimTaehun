@@ -8,29 +8,67 @@
 </head>
 <body>
     <div id="content_parent">
-        <h1>회원가입</h1>
+        <aside id="subject_section">
+            <h1>회원<br>
+                가입</h1>
+        </aside>
         <form action="/submit" method="post">
-            <fieldset>
-                <legend>기본 정보</legend>
-                <label for="username">아이디:</label>
-                <input type="text" id="username" name="username" maxlength="15" placeholder="아이디 입력" autofocus/><br>
-                <label for="password">비밀번호:</label>
-                <input type="password" id="password" name="password" maxlength="8" placeholder="8자 이상 입력"><br>
-                <label for="email">이메일:</label>
-                <input type="email" id="email" name="email" placeholder="example@example.com"><br>
-                <select name="rol" id="">
-                    <option value="frontend">프론트엔드</option>
-                    <option value="backend">백엔드</option>
-                    <option value="design">디자이너</option>
-                </select><br>
-                <label for="introduce">자기소개</label>
-                <textarea id="introduce" name="introduce" rows="1" cols="40" placeholder="자유롭게 입력하세요"></textarea><br>
-                <label for="reading"><input type="checkbox" id="reading">독서</label>
-                <label for="taveling"><input type="checkbox" id="taveling">여행</label>
-                <br>
-                <input type="submit" value="가입하기">
-                <input type="reset" value="초기화">
-            </fieldset>
+            <header id="title_section">
+                <h1>기본 정보</h1>
+            </header>
+            <article id="form_section">
+                <table class="table_in_form">
+                    <tr>
+                        <th><label for="username">아이디</label></th>
+                        <td colspan="2"><input type="text" id="username" name="username" maxlength="15" placeholder="아이디 입력" autofocus required/></td>
+                    </tr>
+                    <tr>
+                        <th><label for="password">비밀번호</label></th>
+                        <td colspan="2"><input type="password" id="password" name="password" minlength="8" placeholder="8자 이상 입력" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">이메일</label></th>
+                        <td colspan="2"><input type="email" id="email" name="email" placeholder="example@example.com" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="rol">선택</label></th>
+                        <td colspan="2">
+                            <select name="rol" id="rol" required>
+                                <option value="frontend">프론트엔드</option>
+                                <option value="backend">백엔드</option>
+                                <option value="design">디자이너</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="introduce">자기소개</label></th>
+                        <td colspan="2">
+                            <textarea id="introduce" name="introduce" rows="3" placeholder="자유롭게 입력하세요" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><p>취미</p></th>
+                        <td>
+                            <label for="reading"><input type="checkbox" id="reading">독서</label>
+                        </td>
+                        <td>
+                            <label for="traveling"><input type="checkbox" id="traveling">여행</label>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <footer id="button_section">
+                <table class="table_in_form">
+                    <tr>
+                        <td>
+                            <input type="submit" class="button" value="가입하기">
+                        </td>
+                        <td>
+                            <input type="reset" class="button" value="초기화">
+                        </td>
+                    </tr>
+                </table>
+            </footer>
         </form>
     </div>
 </body>
