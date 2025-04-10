@@ -5,8 +5,6 @@ const submitForm = document.getElementById("submit_form");
 const alertRemainChance = document.getElementById("alert_remain_chance");
 const alertHint = document.getElementById("alert_hint");
 
-alert(answer);
-
 const judgeAnswer = (inp) => {
     return answer - inp;
 }
