@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         form.reset();
       }
       else {
-        if (!FillRequireField(username, password, email)){
+        if (!fillRequireField(username, password, email)){
             alert("아이디, 비밀번호, 이메일을 모두 입력해주세요.");
         }
         else if (!pwdLengthIsEnough(password)){
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     });
 
-    const FillRequireField = (uname, pwd, eml) => {
+    const fillRequireField = (uname, pwd, eml) => {
         return (uname && pwd && eml);
     } 
 
