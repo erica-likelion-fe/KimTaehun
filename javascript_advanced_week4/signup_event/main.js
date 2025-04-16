@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("정보가 성공적으로 전송되었습니다!");
         console.log(`아이디: ${username}`);
         console.log(`이메일: ${email}`);
+
+        form.reset();
       }
       else {
         if (!FillRequireField(username, password, email)){
