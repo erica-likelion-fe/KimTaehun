@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const allCorrectForm = (uname, pwd, eml) => {
-        return (FillRequireField(uname, pwd, eml) 
+        return (fillRequireField(uname, pwd, eml) 
             && pwdLengthIsEnough(pwd) 
             && pwdIncludeSpecialChar(pwd)); 
     }
