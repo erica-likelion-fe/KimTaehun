@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# ERICA X React Props State
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Page 
+<b>You can navigate to a different page by clicking the navigation bar.</b>
+### 1. Create Page
+![Image](https://github.com/user-attachments/assets/b2cf3fc1-5d6e-46f9-be34-71a2102b7ea5)
+<br> 
+You can create a new element on this page.
+<br>
+If you create a new element, it will be added to the navigation like in the image below.
+<br>
+![Image](https://github.com/user-attachments/assets/485efdc3-4975-47e1-9205-32828e2c69a8)
 
-## Available Scripts
+### 2. Delete Page
+![Image](https://github.com/user-attachments/assets/0fc73664-2968-44f4-bc81-2108f2ada18a)
+<br>
+You can delete an existing element on this page.
+<br>
+If you try to delete a nonexistent element, it won't work. Instead, the page will show an alert.
+<br> 
+![Image](https://github.com/user-attachments/assets/05dbedf8-716f-4def-91cf-d26a358207d1)
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 3. Other Element Page
+![Image](https://github.com/user-attachments/assets/965f121b-9b5c-46a6-bf55-a377c3ad5439)
+<br>
+You can see the element's name and content on this page.
