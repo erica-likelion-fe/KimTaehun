@@ -1,0 +1,41 @@
+.delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    
+    width: 95%;
+    height: 8%;
+
+    margin-top: 3%;
+    border-radius: 10px;
+    padding: 15px;
+
+    background-color:#F8F8FF;
+    box-shadow: 0px 4px 10px 0px rgb(180, 178, 178);
+}
+
+.delete-txt {
+    width: 90%;
+    height: 100%;
+
+    font-size: 2vh;
+
+    border-style: none;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    width: 5%;
+    height: 100%;
+
+    font-size: 2vh;
+    font-weight: bold;
+    color: #FFFFFF;
+
+    border-style: none;
+    border-radius: 5px;
+
+    background-color: #DD1E00;
+}
