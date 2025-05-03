@@ -3,7 +3,7 @@
 ## Page 
 <b>You can navigate to a different page by clicking the navigation bar.</b>
 ### 1. Create Page
-![Image](https://github.com/user-attachments/assets/b2cf3fc1-5d6e-46f9-be34-71a2102b7ea5)
+![Image](https://github.com/user-attachments/assets/a3ecf1a9-e5bd-461f-8a7a-6a6f93f23b02)
 <br> 
 <br>
 You can create a new element on this page.
@@ -14,7 +14,7 @@ If you create a new element, it will be added to the navigation like in the imag
 ![Image](https://github.com/user-attachments/assets/485efdc3-4975-47e1-9205-32828e2c69a8)
 <br>
 ### 2. Delete Page
-![Image](https://github.com/user-attachments/assets/0fc73664-2968-44f4-bc81-2108f2ada18a)
+![Image](https://github.com/user-attachments/assets/0b845f03-94e9-4d3e-8227-b08559e1ac99)
 <br>
 <br>
 You can delete an existing element on this page.
