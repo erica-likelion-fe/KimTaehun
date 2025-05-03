@@ -11,7 +11,7 @@ export default function Delete({ posts, handleDelete }){
             handleDelete(deleteName);
         }
         else {
-            alert("해당 값은 없는 값입니다! 다시 입력해주세요.");
+            alert("해당 이름은 없는 값입니다! 다시 입력해주세요.");
         }
     }
 
@@ -21,7 +21,7 @@ export default function Delete({ posts, handleDelete }){
             className="delete-txt"
             type="text"
             value={deleteName}
-            placeholder="삭제하고 싶은 값을 입력해주세요."
+            placeholder="삭제하고 싶은 이름을 입력해주세요."
             autoFocus
             onChange={(e) => setDeleteName(e.target.value)}/>
             <button type="submit" className="delete-btn">삭제</button>
