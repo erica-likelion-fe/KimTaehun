@@ -8,7 +8,6 @@
 <br>
 You can create a new element on this page.
 <br>
-<br>
 If you create a new element, it will be added to the navigation like in the image below.
 <br>
 <br>
@@ -20,11 +19,10 @@ If you create a new element, it will be added to the navigation like in the imag
 <br>
 You can delete an existing element on this page.
 <br>
-<br>
 If you try to delete a nonexistent element, it won't work. Instead, the page will show an alert.
 <br>
 <br> 
-![Image](https://github.com/user-attachments/assets/05dbedf8-716f-4def-91cf-d26a358207d1)
+![Image](https://github.com/user-attachments/assets/425ec4a7-7060-4920-8905-c1e795a97e1d)
 <br>
 ### 3. Other Element Page
 ![Image](https://github.com/user-attachments/assets/965f121b-9b5c-46a6-bf55-a377c3ad5439)
