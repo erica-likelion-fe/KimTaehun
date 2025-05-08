@@ -1,0 +1,33 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width:fit-content; /*hug*/
+    height:fit-content; /*hug*/
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    border: 2px solid #000000;
+    color: #000000;
+    background-color: #FFFFFF;
+
+    padding: 24px 48px;
+    box-shadow: 0 0 20 0 #00000026;
+}
+
+.button:hover{
+    border: 3px solid #000000;
+}
+
+.button:disabled{
+    color: #B2B2B2;
+    box-shadow: none;
+}
+
+.button:disabled:hover{
+    border: 2px solid #000000;
+}
