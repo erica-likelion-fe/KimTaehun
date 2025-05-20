@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Italiana&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap');
+
+@font-face {
+	font-family: 'Apple SD Gothic Neo';
+	font-style: normal;
+	font-weight: 100;
+	src: url(../font/AppleSDGothicNeoT.ttf) format("truetype");
+}
+@font-face {
+	font-family: 'Apple SD Gothic Neo';
+	font-style: normal;
+	font-weight: 200;
+	src: url(../font/AppleSDGothicNeoUL.ttf) format("truetype");
+}
+@font-face {
+	font-family: 'Apple SD Gothic Neo';
+	font-style: normal;
+	font-weight: 300;
+	src: url(../font/AppleSDGothicNeoL.ttf) format("truetype");
+}
+@font-face {
+	font-family: 'Apple SD Gothic Neo';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../font/AppleSDGothicNeoR.ttf) format("truetype");
+}
+@font-face {
+	font-family: 'Apple SD Gothic Neo';
+	font-style: normal;
+	font-weight: 500;
+	src: url(../font/AppleSDGothicNeoM.ttf) format("truetype");
+}
+@font-face {
+	font-family: 'Apple SD Gothic Neo';
+	font-style: normal;
+	font-weight: 600;
+	src: url(../font/AppleSDGothicNeoSB.ttf) format("truetype");
+}
+@font-face {
+	font-family: 'Apple SD Gothic Neo';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../font/AppleSDGothicNeoB.ttf) format("truetype");
+}
+@font-face {
+	font-family: 'Apple SD Gothic Neo';
+	font-style: normal;
+	font-weight: 800;
+	src: url(../font/AppleSDGothicNeoEB.ttf) format("truetype");
+}
+@font-face {
+	font-family: 'Apple SD Gothic Neo';
+	font-style: normal;
+	font-weight: 800;
+	src: url(../font/AppleSDGothicNeoH.ttf) format("truetype");
+}
+
+.abhaya-libre-regular {
+	font-family: "Abhaya Libre", serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  .abhaya-libre-medium {
+	font-family: "Abhaya Libre", serif;
+	font-weight: 500;
+	font-style: normal;
+  }
+  
+  .abhaya-libre-semibold {
+	font-family: "Abhaya Libre", serif;
+	font-weight: 600;
+	font-style: normal;
+  }
+  
+  .abhaya-libre-bold {
+	font-family: "Abhaya Libre", serif;
+	font-weight: 700;
+	font-style: normal;
+  }
+  
+  .abhaya-libre-extrabold {
+	font-family: "Abhaya Libre", serif;
+	font-weight: 800;
+	font-style: normal;
+  }
+  
+  .abhaya-libre-regular {
+	font-family: "Abhaya Libre", serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  .abhaya-libre-medium {
+	font-family: "Abhaya Libre", serif;
+	font-weight: 500;
+	font-style: normal;
+  }
+  
+  .abhaya-libre-semibold {
+	font-family: "Abhaya Libre", serif;
+	font-weight: 600;
+	font-style: normal;
+  }
+  
+  .abhaya-libre-bold {
+	font-family: "Abhaya Libre", serif;
+	font-weight: 700;
+	font-style: normal;
+  }
+  
+  .abhaya-libre-extrabold {
+	font-family: "Abhaya Libre", serif;
+	font-weight: 800;
+	font-style: normal;
+  }
+
+  .italiana-regular {
+	font-family: "Italiana", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }  
+
+* {
+    box-sizing: border-box;
+    font-family: "Apple SD Gothic Neo";
+}

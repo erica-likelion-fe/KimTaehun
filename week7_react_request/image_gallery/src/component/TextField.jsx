@@ -1,10 +1,15 @@
-import React from "react"
+import React, { useState } from "react"
 import '../style/TextField.css';
 
-export default function TextField() {
+export default function TextField( {text} ) {
+    const [value, setValue] = useState("");
+    
     return (
-        <div>
-            
-        </div>
+        <input className={["text-field", value && "text-filled"].filter(Boolean).join(" ")}
+            type="text" 
+            placeholder={text} 
+            onChange={e => setValue(e.target.value)}
+            value={value}
+            ></input>
     );
 }

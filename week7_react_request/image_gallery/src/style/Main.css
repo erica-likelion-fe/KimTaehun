@@ -1,0 +1,40 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 1248px;
+    height: 2578px;
+    /*height: fit-content;*/
+
+    position: absolute;
+    top: 540.64px;
+}
+
+.main-post-div {
+    display: flex;
+    flex-direction: column;
+
+    width: 1248px;
+    height: 2387px;
+
+    gap: 20px;
+}
+
+.main-title {
+    width: 1248px;
+    height: 43px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.main-post-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
+    row-gap: 100px;
+    background-color: red;
+}

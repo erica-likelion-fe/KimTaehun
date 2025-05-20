@@ -1,0 +1,32 @@
+.text-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width:1000px;
+    height:fit-content; /*hug*/
+
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    border: 1px solid #000000;
+    color: #B2B2B2;
+    background-color: #FFFFFF;
+
+    padding: 24px 46px;
+}
+
+.text-field:hover{
+    border: 3px solid #363636;
+}
+
+.text-filled {
+    color: #363636;
+}
+
+.text-field:focus{
+    border: 3px solid #000000;
+    box-shadow: 0 0 20 0 #000000 15%;
+}
