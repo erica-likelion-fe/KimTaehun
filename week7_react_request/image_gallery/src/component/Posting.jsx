@@ -17,7 +17,7 @@ export default function Posting({posts, postId, handleButtonClick, handleBackCli
                 <div className="posting-area">
                     <div className="posting-img-title-date">
                         <div className="posting-img-div">
-                            <img className="posting-img" src={post.imgUrl} alt="Preview" />
+                            {post.imgUrl && <img className="posting-img" src={post.imgUrl} alt="Preview" /> }
                         </div>
                         <div className="posting-title-date">
                             <span className="posting-title">{post.title}</span>
