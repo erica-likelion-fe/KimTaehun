@@ -2,6 +2,7 @@
   "name": "image_gallery",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://mna11.dothome.co.kr/image_gallery/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
