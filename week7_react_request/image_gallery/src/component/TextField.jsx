@@ -1,15 +1,23 @@
 import React, { useState } from "react"
 import '../style/TextField.css';
 
-export default function TextField( {text} ) {
-    const [value, setValue] = useState("");
+export default function TextField( {isTextArea=false, value, onChange, isDisabled, placeholder} ) {
     
-    return (
-        <input className={["text-field", value && "text-filled"].filter(Boolean).join(" ")}
+    const classes = ["text-field", value && "text-filled"].filter(Boolean).join(" ");
+
+    if (isTextArea) {
+        return (
+            <textarea className={classes + " text-area"} placeholder={placeholder} onChange={onChange} value={value} disabled={false} rows="3"/>
+        )
+    }
+    else {
+        return (
+            <input className={classes}
             type="text" 
-            placeholder={text} 
-            onChange={e => setValue(e.target.value)}
+            placeholder={placeholder} 
+            onChange={onChange}
             value={value}
-            ></input>
-    );
+            disabled={isDisabled} />
+        )
+    }
 }

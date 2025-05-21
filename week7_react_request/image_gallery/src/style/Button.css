@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
 
-    width:fit-content; /*hug*/
-    height:fit-content; /*hug*/
+    width:271px;
+    height:91px;
 
     font-weight: 400;
     font-size: 36px;
@@ -16,11 +16,14 @@
     background-color: #FFFFFF;
 
     padding: 24px 48px;
-    box-shadow: 0 0 20 0 #00000026;
+    box-shadow: 0 0 20px 0 #00000026;
+
+    text-wrap: nowrap;
 }
 
 .button:hover{
     border: 3px solid #000000;
+    box-shadow: 0 0 20px 0#00000026;
 }
 
 .button:disabled{

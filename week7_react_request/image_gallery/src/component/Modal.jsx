@@ -2,7 +2,7 @@ import React from "react"
 import {ReactComponent as CloseIcon} from "../asset/material-symbols-light_close-small-outline-rounded.svg"
 import '../style/Modal.css';
 
-export default function Modal({alert_text, button_text, handleModalCloseClick, handleModalButtonClick, handleModalCancleClick}) {
+export default function Modal({alert_text, button_text, handleModalCloseClick, handleModalButtonClick}) {
     function onCloseClick(e) {
         handleModalCloseClick(e);
     }
@@ -10,11 +10,7 @@ export default function Modal({alert_text, button_text, handleModalCloseClick, h
     function onButtonClick(e) {
         handleModalButtonClick(e);
     }
-
-    function onCancleClick(e) {
-        handleModalCancleClick(e);
-    }
-
+    
     return (
         <div className="modal">
             <div className="modal-inner-field">
@@ -25,7 +21,7 @@ export default function Modal({alert_text, button_text, handleModalCloseClick, h
                         <button className="modal-ok-button" type="button" onClick={onButtonClick} value={button_text}>
                             {button_text}
                         </button>
-                        <button className="modal-cancle-button" type="button" onClick={onCancleClick} value="cancle">
+                        <button className="modal-cancle-button" type="button" onClick={onCloseClick} value="cancle">
                             CANCLE
                         </button>
                     </div>

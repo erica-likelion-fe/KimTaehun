@@ -1,7 +1,10 @@
 .modal {
+    position: fixed;
+    top: 100px;
     width: 886px;
     height: 560px;
     padding: 12px 10px;
+    z-index: 200;
 }
 
 .modal-inner-field {
@@ -26,8 +29,8 @@
 }
 
 .modal-alert-text {
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
 
     font-weight: 700;
     font-size: 36px;

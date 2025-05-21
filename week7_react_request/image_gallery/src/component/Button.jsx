@@ -1,12 +1,12 @@
 import React from "react"
 import '../style/Button.css';
 
-export default function Button({ text, isDisabled, handleButtonClick }) {
+export default function Button({ text, type="button", postId=0, isDisabled, handleButtonClick }) {
     function onButtonClick(e){
-        handleButtonClick(e.target.value);
+        handleButtonClick(e.target.value, postId);
     }
 
     return (
-        <button type="button" className="button" onClick={onButtonClick} disabled={isDisabled} value={text}>{text}</button>
+        <button type={type} className="button" onClick={onButtonClick} disabled={isDisabled} value={text}>{text}</button>
     );
 }
