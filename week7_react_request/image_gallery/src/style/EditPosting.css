@@ -10,6 +10,24 @@
     margin-top: 367px;
 }
 
+.edit-posting-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1249px;
+    height: auto; 
+
+    margin-top: -88px;
+}
+
+.edit-posting-arrow-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 88px;
+    height: 88px;
+}
+
 .edit-posting-div {
     display:flex;
     flex-direction: column;

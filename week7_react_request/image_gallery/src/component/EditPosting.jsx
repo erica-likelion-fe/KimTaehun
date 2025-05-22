@@ -1,10 +1,10 @@
 import { useState } from "react"
 import Button from "./Button.jsx";
 import TextField from "./TextField.jsx";
+import {ReactComponent as ArrowLeft} from "../asset/material-symbols-light_keyboard-arrow-left.svg"
 import FileUploadZone from "./FileUploadZone.jsx";
-import "../style/EditPosting.css"
 
-export default function EditPosting({posts, postId = 0, handleButtonClick, handleSubmitPost}){
+export default function EditPosting({posts, postId = 0, handleButtonClick, handleSubmitPost, handleBackClick}){
     const post = posts.find(e => (e.id === postId));
     
     const [imgUrl, setImgUrl] = useState(post ? post.imgUrl : null);
@@ -33,9 +33,15 @@ export default function EditPosting({posts, postId = 0, handleButtonClick, handl
         setImgUrl(URL.createObjectURL(file));
     }
     
+    function onNavLeftClick(){
+        handleBackClick();
+    }
 
     return ( 
         <form className="edit-posting" onSubmit={onSubmit}>
+            <div className="edit-posting-nav">
+                <div className="edit-posting-arrow-left" onClick={onNavLeftClick}><ArrowLeft /></div>
+            </div>
             <div className="edit-posting-div">
                 <FileUploadZone imgUrl={imgUrl} onFileSelected={handleFileSelected}/>
                 <div className="edit-posting-form-items">

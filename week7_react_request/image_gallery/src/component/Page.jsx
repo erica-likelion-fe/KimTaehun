@@ -44,7 +44,7 @@ export default function Page(){
             setcurrentView("posting");
         }
         else if (e.target.value === "DELETE") {
-            setPosts(posts.filter(post => post.id != postId));
+            setPosts(posts.filter(post => post.id !== postId));
             setcurrentView("main");
         }
         setShowModal(false);
@@ -98,13 +98,13 @@ export default function Page(){
             return (<Main posts={posts} handleButtonClick={handleButtonClick} handleCardClick={handleCardClick}/>)
         }
         else if (currentView === "createPost") {
-            return (<EditPosting posts={posts} handleButtonClick={handleButtonClick} handleSubmitPost={handleSubmitPost}/>)
+            return (<EditPosting posts={posts} handleButtonClick={handleButtonClick} handleSubmitPost={handleSubmitPost} handleBackClick={handleBackClick}/>)
         }
         else if (currentView === "posting"){
             return <Posting posts={posts} postId={lastPostId} handleButtonClick={handleButtonClick} handleBackClick={handleBackClick}/>
         }
         else if (currentView === "editPosting"){
-            return <EditPosting posts={posts} postId={lastPostId} handleButtonClick={handleButtonClick} handleSubmitPost={handleSubmitPost}/>
+            return <EditPosting posts={posts} postId={lastPostId} handleButtonClick={handleButtonClick} handleSubmitPost={handleSubmitPost} handleBackClick={handleBackClick}/>
         }
     }
 
