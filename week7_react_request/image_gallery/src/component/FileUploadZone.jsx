@@ -1,10 +1,10 @@
 /* GPT - help */
-import { useState, useCallback, useRef } from "react"
+import { useCallback, useRef } from "react"
 import {ReactComponent as DriveFile} from "../asset/material-symbols-light_drive-file-move-outline-sharp.svg"
 import {useDropzone} from 'react-dropzone'
 import Button from "./Button";
 import "../style/FileUploadZone.css"
-import "../style/CreatePost.css"
+import "../style/EditPosting.css"
 
 export default function FileUploadZone({ imgUrl, onFileSelected }) {
     const inputRef = useRef(null);
@@ -25,8 +25,8 @@ export default function FileUploadZone({ imgUrl, onFileSelected }) {
     }
 
     return (
-        <div className="create-post-form-items">
-            <span className="create-post-item-title">Image *</span>
+        <div className="edit-posting-form-items">
+            <span className="edit-posting-item-title">Image *</span>
             <input {...getInputProps()} ref={inputRef} style={{ display: "none" }}/>
             {imgUrl ? (
                 <div className="file-upload-zone-preview-div">

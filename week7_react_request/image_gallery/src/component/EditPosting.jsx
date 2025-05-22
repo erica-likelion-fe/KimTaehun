@@ -1,9 +1,8 @@
 import { useState } from "react"
-import "../style/CreatePost.css"
-import "../style/EditPosting.css"
 import Button from "./Button.jsx";
 import TextField from "./TextField.jsx";
 import FileUploadZone from "./FileUploadZone.jsx";
+import "../style/EditPosting.css"
 
 export default function EditPosting({posts, postId = 0, handleButtonClick, handleSubmitPost}){
     const post = posts.find(e => (e.id === postId));
@@ -36,20 +35,20 @@ export default function EditPosting({posts, postId = 0, handleButtonClick, handl
     
 
     return ( 
-        <form className="create-post" onSubmit={onSubmit}>
-            <div className="create-post-div">
+        <form className="edit-posting" onSubmit={onSubmit}>
+            <div className="edit-posting-div">
                 <FileUploadZone imgUrl={imgUrl} onFileSelected={handleFileSelected}/>
-                <div className="create-post-form-items">
-                    <span className="create-post-item-title">Title *</span>
+                <div className="edit-posting-form-items">
+                    <span className="edit-posting-item-title">Title *</span>
                     <TextField value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Text" isDisabled={false}/>
-                    <span className="create-post-item-message">*Please enter no more than 20 characters.</span>
+                    <span className="edit-posting-item-message">*Please enter no more than 20 characters.</span>
                 </div>
-                <div className="create-post-form-items">
-                    <span className="create-post-item-title">Description *</span>
+                <div className="edit-posting-form-items">
+                    <span className="edit-posting-item-title">Description *</span>
                     <div></div>
                     {postId === 0 ? (<TextField value={description ?? ""} onChange={(e) => setDescription(e.target.value)} placeholder="Text" isDisabled={false}/>
                     ):(<TextField isTextArea={true} value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Text" isDisabled={false}/>)}
-                    <span className="create-post-item-message">*Please enter no more than 200 characters.</span>
+                    <span className="edit-posting-item-message">*Please enter no more than 200 characters.</span>
                 </div>
             </div>
                     {postId === 0 ? (<Button type="submit" text="Submit Post" isDisabled={false} handleButtonClick={handleButtonClick}/>
