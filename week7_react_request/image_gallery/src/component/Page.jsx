@@ -109,16 +109,16 @@ export default function Page(){
     }
 
     return (
+        <>
         <div id="page">
             <span id="title">Image Gallery</span>
             <Article />
-            {showModal && (
-                <>
-                    <div className="modal-open" />
-                    {modal}
-                </>
-            )}
         </div>
-
+        {showModal && (
+            <>
+                <div className="modal-open" />
+                {modal}
+            </>)}
+        </>
     )
 }
