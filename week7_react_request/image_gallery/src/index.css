@@ -126,3 +126,7 @@
     box-sizing: border-box;
     font-family: "Apple SD Gothic Neo";
 }
+
+#root {
+	height: 100dvh;
+}

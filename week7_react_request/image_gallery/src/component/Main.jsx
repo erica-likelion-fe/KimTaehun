@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Button from "./Button.jsx";
 import Card from "./Card.jsx";
 import {ReactComponent as ArrowLeft} from "../asset/material-symbols-light_keyboard-arrow-left.svg"
 import {ReactComponent as ArrowRight} from "../asset/material-symbols-light_keyboard-arrow-right.svg"
 import "../style/Main.css"
 
-export default function Main({posts, handleButtonClick, handleCardClick}){
+export default function Main({posts, handleButtonClick, handleCardClick, isDisabled}){
     const [page, setPage] = useState(1);
     const pageSize = 16;
 
@@ -59,7 +59,7 @@ export default function Main({posts, handleButtonClick, handleCardClick}){
 
     return ( 
         <div className="main">
-            <Button text="Create Post" isDisabled={false} handleButtonClick={handleButtonClick}/>
+            <Button text="Create Post" isDisabled={isDisabled} handleButtonClick={handleButtonClick}/>
             <div className="main-post-div">
                 <span className="main-title">Image</span>
                 <div className="main-post-grid">

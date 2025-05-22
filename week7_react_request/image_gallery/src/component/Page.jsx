@@ -95,16 +95,16 @@ export default function Page(){
 
     function Article(){
         if (currentView === "main") {
-            return (<Main posts={posts} handleButtonClick={handleButtonClick} handleCardClick={handleCardClick}/>)
+            return (<Main posts={posts} handleButtonClick={handleButtonClick} handleCardClick={handleCardClick} isDisabled={false}/>)
         }
         else if (currentView === "createPost") {
-            return (<EditPosting posts={posts} handleButtonClick={handleButtonClick} handleSubmitPost={handleSubmitPost} handleBackClick={handleBackClick}/>)
+            return (<EditPosting posts={posts} handleButtonClick={handleButtonClick} handleSubmitPost={handleSubmitPost} handleBackClick={handleBackClick} isDisabled={false}/>)
         }
         else if (currentView === "posting"){
-            return <Posting posts={posts} postId={lastPostId} handleButtonClick={handleButtonClick} handleBackClick={handleBackClick}/>
+            return <Posting posts={posts} postId={lastPostId} handleButtonClick={handleButtonClick} handleBackClick={handleBackClick} isDisabled={false}/>
         }
         else if (currentView === "editPosting"){
-            return <EditPosting posts={posts} postId={lastPostId} handleButtonClick={handleButtonClick} handleSubmitPost={handleSubmitPost} handleBackClick={handleBackClick}/>
+            return <EditPosting posts={posts} postId={lastPostId} handleButtonClick={handleButtonClick} handleSubmitPost={handleSubmitPost} handleBackClick={handleBackClick} isDisabled={false}/>
         }
     }
 

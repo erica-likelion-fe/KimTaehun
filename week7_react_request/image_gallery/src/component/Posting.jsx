@@ -2,7 +2,7 @@ import Button from "./Button";
 import {ReactComponent as ArrowLeft} from "../asset/material-symbols-light_keyboard-arrow-left.svg"
 import "../style/Posting.css"
 
-export default function Posting({posts, postId, handleButtonClick, handleBackClick}) {
+export default function Posting({posts, postId, handleButtonClick, handleBackClick, isDisabled}) {
     const post = posts.find(e => (e.id === postId));
     function onNavLeftClick(){
         handleBackClick();
@@ -27,8 +27,8 @@ export default function Posting({posts, postId, handleButtonClick, handleBackCli
                     <span className="posting-content">{post.content}</span>
                 </div>
                 <div className="posting-button-div">
-                    <Button text="Delete Post" postId={postId} isDisabled={false} handleButtonClick={handleButtonClick}/>
-                    <Button text="Edit Post" postId={postId} isDisabled={false} handleButtonClick={handleButtonClick}/>
+                    <Button text="Delete Post" postId={postId} isDisabled={isDisabled} handleButtonClick={handleButtonClick}/>
+                    <Button text="Edit Post" postId={postId} isDisabled={isDisabled} handleButtonClick={handleButtonClick}/>
                 </div>
             </div>
         </div>
