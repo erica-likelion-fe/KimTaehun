@@ -2,7 +2,6 @@ import { useState, useEffect } from "react"
 import React from "react";
 import { Posts } from "../data/Posts.jsx"
 import Main from "./Main.jsx"
-import CreatePost from "./CreatePost.jsx"
 import Modal from "./Modal.jsx"
 import Posting from "./Posting.jsx"
 import EditPosting from "./EditPosting.jsx";
@@ -54,8 +53,8 @@ export default function Page(){
         setShowModal(false);
     }
 
-    function handleSubmitPost({postId = 0, imgUrl, title, description, date}){
-        if (postId === 0){
+    function handleSubmitPost({postId, imgUrl, title, description, date}){
+        if (postId === 0){ // by creating post
             setLastPostId(posts.length+1);
             setPosts([...posts, {id: posts.length + 1, date: date, title: title, content: description, imgUrl: imgUrl}]);
             setModal(
@@ -67,7 +66,7 @@ export default function Page(){
             />);
             setShowModal(true);
         }
-        else {
+        else { // by edting post
             const post = posts.find((post) => post.id === postId);
             post.title = title;
             post.date = date;
@@ -99,7 +98,7 @@ export default function Page(){
             return (<Main posts={posts} handleButtonClick={handleButtonClick} handleCardClick={handleCardClick}/>)
         }
         else if (currentView === "createPost") {
-            return (<CreatePost handleButtonClick={handleButtonClick} handleSubmitPost={handleSubmitPost}/>)
+            return (<EditPosting posts={posts} handleButtonClick={handleButtonClick} handleSubmitPost={handleSubmitPost}/>)
         }
         else if (currentView === "posting"){
             return <Posting posts={posts} postId={lastPostId} handleButtonClick={handleButtonClick} handleBackClick={handleBackClick}/>
@@ -113,7 +112,6 @@ export default function Page(){
         <div id="page">
             <span id="title">Image Gallery</span>
             <Article />
-
             {showModal && (
                 <>
                     <div className="modal-open" />
